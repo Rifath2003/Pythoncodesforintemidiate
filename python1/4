@@ -1,0 +1,61 @@
+"""
+import random
+def c(a,b):
+    return random.uniform(a,b)
+a=float(input(''))
+b=float(input(''))
+r=c(a,b)
+print(f'Random number is{r}')
+"""
+"""
+def s(n):
+    return (n*(n+1))//2
+    
+n=int(input(''))
+r=s(n)
+print(f'{r}')
+"""
+"""
+def c(a,b):
+   e=0
+   for i in range(a,b+1):
+ 
+     e=e+i
+   return e
+a=int(input(''))
+b=int(input(''))
+r=c(a,b)
+print(f'{r}')
+"""
+"""
+
+def c(d):
+   
+   e="aeiouAEIOU"
+
+   co=0
+
+   for i in d:
+       if i in e:
+        co+=1
+   return co
+a=input('')
+b=c(a)
+print(f'{res}')
+"""
+"""
+"""
+
+d.maketrans(" ", " ", string.punctuation) creates a translation table e that maps each punctuation character in string.punctuation to None. This effectively tells the translate method to remove these characters from the string d.
+Translation:
+d.translate(e) uses the translation table e to remove all punctuation characters from the string d.
+"""
+
+import string
+def c(d):
+   e=d.maketrans(" "," ",string.punctuation)
+   return d.translate(e)
+a=input('')
+b=c(a)
+print(f'{b}')
+"""
