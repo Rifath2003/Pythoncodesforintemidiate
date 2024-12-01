@@ -1,0 +1,50 @@
+"""
+print("hello world")
+print('hello world')
+wcl_speech=input("please taataa = ")
+print(wcl_speech)
+"""
+"""
+firstnum=int(input("type 1st num = "))
+secondnum=int(input("type 2nd num = "))
+addnum=firstnum+secondnum
+print(f"The summation = {addnum}")
+"""
+
+"""
+def sqr_root(n):
+    if n<0 :
+      return "unreal"
+    else :
+        return n*0.5
+
+n=int(input("type num = "))
+root_num=sqr_root(n)
+print(f"the root of {root_num}")
+"""
+
+"""
+def triangle(a,b,c):
+    s=(a+b+c)/2
+    if a**2==b**2+c**2:
+        return 0.5*b*c
+    else :
+             return (s*(s-a)*(s-b)*(s-c))**0.5
+    
+a=int(input("large "))
+b=int(input("second "))
+c=int(input("third "))
+result=triangle(a,b,c)
+print(f"area:{result}")
+"""
+"""
+def check(n):
+    if n%2==0 :
+      return "even"
+    else :
+        return "odd"
+
+n=int(input("type num = "))
+result=check(n)
+print(f" {result}")
+"""
