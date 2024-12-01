@@ -1,0 +1,75 @@
+1
+'''
+a={'a':2,'b':'c'}
+c=input('')
+if c in a :
+    print(f'The key {c} exists in dctionary')
+else:
+    print(f'The key {c} does not exists in dctionary')
+'''
+2
+'''
+a={'a':2,'b':'c'}
+b={'d':2,'e':'f'}
+c=a.copy()
+c.update(b)
+print('merged dictonary:',c)
+
+'''
+3
+'''
+a={'a':2,'b':'c'}
+b={'d':2,'e':'f'}
+
+
+a.update(b)
+print('merged dictonary:',a)
+'''
+4
+'''
+a is your dictionary.
+c is the key of the item you want to remove from the dictionary a.
+b will be assigned the value of the item that was removed from the dictionary.
+
+
+a={'a':2,'b':'c'}
+c=input('')
+
+if c in a:
+    b=a.pop(c)
+    
+    print(f'the key {c} removed with value {b}from the dictonary')
+    print(f'updated dictionary{a}')
+else:
+    print(f'the key {c} does not exist  in the dictonary')
+'''
+5
+'''
+a={'a':2,'b':9}
+b=dict(sorted(a.items(),key=lambda item:item[1],reverse=True))
+print('Dictionary sorted by values',b)
+‘’’
+`a.items()` gets all key-value pairs from the dictionary `
+The `key=lambda item: item[1]` part tells the sorting function to use the second element (the value) of each item for sorting. 
+
+It's like saying, "Sort by the value, not the key.”
+
+`dict(...)` converts the sorted pairs back into a dictionary.
+‘’’
+
+'''
+6
+
+def c(d):
+    e={}
+    for i in d:
+        if i!=' ':
+            if i in e:
+                e[i]+=1
+            else:
+                e[i]=1
+    return e           
+
+a=input('')
+b=c(a)
+print('Character frequency :',b)
