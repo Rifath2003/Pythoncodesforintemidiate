@@ -1,0 +1,23 @@
+"""
+
+a=list(map(int,input('1st list ').split()))
+b=list(map(int,input('2nd list ').split()))
+
+c = a + b
+print(f'merged list {c}')
+
+"""
+"""
+
+a=list(map(int,input('enter list ').split()))
+
+b = sum(a)
+print(f'summation of list {b}')
+
+"""
+
+a=list(map(int,input('1st list ').split()))
+b=list(map(int,input('2nd list ').split()))
+
+c= list( set(a) &  set(b))
+print(f'common elments of 1st and 2nd is {c} ')
