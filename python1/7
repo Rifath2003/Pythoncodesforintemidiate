@@ -1,0 +1,89 @@
+'''
+a = list(map(int, input('Enter numbers: ').split()))
+e = {}
+for i in a:
+    if i in e:
+        e[i] += 1
+    else:
+        e[i] = 1
+for i, count in e.items():
+    print(f'Element {i} occurs {count} times')
+
+'''    
+'''    
+def c(d) :
+     return list(set(d))
+  
+a = list(map(int,input('enter number ').split()))
+r = c(a)
+print('list after removing duplicates: ',r)
+
+'''    
+
+'''
+
+def c(d) :
+     e = [ ]
+     for i in d :
+         if i not in e :
+             e.append(i)
+     return  e
+  
+a= list(map(int,input('enter number ').split()))
+r = c(a)
+print('list after removing duplicates: ',r)
+
+'''
+'''
+isinstance(i, list): Checks if i is a list.
+e.extend(c(i)): If i is a list, it flattens it.
+e.append(i): If i is not a list, it adds i to e.
+“‘
+“‘
+def c(d) :
+    e = [ ]
+    for i in d :
+        if isinstance(i,list) :
+                   e.extend(c(i))
+        else :
+            e.append(i)
+    return e
+
+a= [7,[2,3],4,[2,[3,4],5],6,[7,8] ]
+b = c(a)
+print('flattend list : ',b )
+
+
+'''
+'''
+def c(d) :
+    if not d :
+        return 'this list is empty'
+    else :
+        return 'this list is not empty'
+
+a = [ ]
+
+print(c(a))
+
+b= [1,2,3]
+
+print(c(b))
+
+'''
+
+def f(s1,s2) :
+    
+    a = s1.intersection(s2)
+    
+    return a
+
+i1=input('')
+i2=input('')
+
+s1 = set(map(int,i1.split()))
+s2 = set(map(int,i2.split()))
+
+r= f(s1,s2)
+
+print('result',r)
