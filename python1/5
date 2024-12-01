@@ -1,0 +1,31 @@
+"""
+
+def c(d):
+       e = list(set(d))
+       if len(e)<2:
+           return 'it does not have any second largest number '
+       e.sort(reverse=True) 
+       return e[1]
+
+a=list(map(int,input("enter numbers sperated by space ").split()))
+
+b=c(a)
+print('the second largest number is:',b)
+
+"""
+"""
+
+a=list(map(int,input('enter numbers seperated by space ').split()))
+a.sort()
+print(f'the ordered number list is={a}')
+
+"""
+"""
+
+a=list(map(int,input('enter numbers seperated by space ').split()))
+
+a.sort(reverse=True)
+
+print(f'the ordered number list is={a}')
+
+"""
