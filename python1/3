@@ -1,0 +1,50 @@
+"""
+def l(a,b,c):
+    if a>=b and a>=c :
+       return a
+    elif b>=a and b>=c:
+      return b
+    else:
+        return c
+
+a=float(input(' '))
+b=float(input(' '))
+c=float(input(' '))
+r=l(a,b,c)
+print(f' LARGEST {r}')
+"""
+"""
+def g(a,b):
+
+    while b:
+       a,b=b,a%b
+    return a
+
+def l(a,b):
+
+    return abs( (a*b)//g(a,b) )
+
+a=int(input())
+b=int(input())
+c=g(a,b)
+print(f’ GCD {c}')
+
+d=l(a,b)
+print(f’ LCM {d}')
+"""
+"""
+def c(a):
+    return (((a*9)/5)+32)
+a=float(input(''))
+r=c(a)
+print(f’ Farenhieght  {r}')
+"""
+"""
+import random
+def c(a,b):
+    return random.randint(a,b)
+a=int(input(''))
+b=int(input(''))
+r=c(a,b)
+print(f'Random number {r}')
+"""
